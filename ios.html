@@ -8,6 +8,7 @@
 </head>
 <body>
     <img src="img_ios/ios.png" alt="Android Logo" style="width: 18rem; height: 15rem; padding-left:35rem ;">
+    <div class="box green" style="width: 5rem;"><img src="img/apple_ios-removebg-preview-removebg-preview.png"></div>
     <div id="menu" style="padding-top:4rem;">
     <nav>
       <ul>
@@ -19,7 +20,7 @@
 <section id="resumee">
   <div style="padding: 50px;">
     <div id="resumen">
-      <h1 style="padding-right: 2rem;">¿Que es iOS?</h1>
+      <h1 style="padding-right: 2rem;">¿Qué es iOS?</h1>
       <h3>iOS es el sistema operativo móvil desarrollado por Apple Inc. diseñado exclusivamente para sus dispositivos, principalmente el iPhone y el iPod Touch. Se caracteriza por ser un sistema cerrado, rápido y seguro, con una interfaz intuitiva basada en gestos, que ofrece un ecosistema integrado con servicios como iCloud, la App Store y actualizaciones constantes.</h3>
     </div>
   </div>
@@ -91,5 +92,19 @@
  <div>
     <button id="footer" onclick="window.location.href='index.html'">Volvamos al inicio</button>
   </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script>
+
+  gsap.to(".box", { 
+    rotation: 360,
+  x: '100vw',
+  xPercent: -100,
+  // special properties
+  duration: 2, // how long the animation lasts
+  repeat: 3, // the number of repeats - this will play 3 times
+  yoyo: true, // this will alternate back and forth on each repeat. Like a yoyo
+});
+</script>
 </body>
 </html>
