@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design_android.css"></link><!--rel Specifies the relationship between the current document and the linked document-->
+    <!--Aqui van las fuentes nuevas-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Android</title>
+</head>
+<body>
+  <div id="menu">
+    <nav>
+      <ul>
+        <img src="img_android/android.png" alt="Android Logo" style="width: 9rem; height: 4rem;">
+        <li class="menu"><a href="#resumee"></a>¿Qué es Android?</li> 
+        <li class="menu" ><a href="#timeline"></a>TimeLine</li>
+      </ul>
+    </nav>
+  </div>
+<header>
+  <div>
+    <img style="width: 24rem; display: inline-flexbox;" id="gif1" src="img_android/android-logo.gif">
+    <img style="width: 14rem; display: inline-flexbox;" src="img_android/android-update.gif">
+  </div>
+</header>
+  <!--Segmento de java script-->
+  <script>
+    // Duracion del gif en milisegundos
+    const duracion = 4500; 
+    setTimeout(() => {
+      document.getElementById('gif1').src = "img_android/android-logo-final.png";
+    }, duracion);
+  </script>
+<section id="resumee">
+  <div style="padding: 50px;">
+    <div id="resumen">
+      <h1 style="padding-right: 2rem;">¿Que es Android?</h1>
+      <h3>Creado por Android Inc., una compañía adquirida por Google en 2005, Android es el nombre de un sistema operativo que se emplea en dispositivos móviles, por lo general con pantalla táctil. Este se basa en Linux, un programa libre que, a su vez, está basado en Unix. El objetivo inicial de Android, de este modo, fue promover los estándares abiertos en teléfonos y computadoras (ordenadores) móviles.</h3>
+    </div>
+  </div>
+</section>
+
+<main id="timeline">
+    <div class="timeline-container">
+      <div class="timeline">
+        <div class="item">
+          <div class="node"><!--Esto es un segmento vectorial, sirve para crear figuras o una imagen dibujada en el codigo-->
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/><!--Dibuja la figura usando coordenadas que se guardan en el atributo d-->
+            </svg>
+            <img src="img_android/eclair-removebg-preview.png" class="node-image">
+          </div>
+          <div class="card">
+            <h3>Eclair Android 2.0 API 7</h3>
+            <div class="meta">Octubre 2009</div>
+            <p>◉ Pocos usuarios, ya que muchos saltaron a 2.1.<br>
+            ◉ Incorporó API para Bluetooth 2.1 y sincronización de adaptadores.<br>
+            ◉ Mejora en la gestión de cuentas y contactos.<br>
+            ◉ Nuevas configuraciones de cámara y optimización de hardware.<br>
+            ◉ Soporte para HTML5 y mejoras en el calendario con Microsoft Exchange.<br>
+            ◉ MotionEvent ahora soporta pantallas multitáctiles.</p>        
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/><!--Dibuja la figura usando coordenadas que se guardan en el atributo d-->
+            </svg>
+          </div>
+          <img src="img_android/froyo-removebg-preview.png" class="node-image">
+          <div class="card">
+            <h3>Froyo Android 2.2 API 8</h3>
+            <div class="meta"> Mayo 2010</div>
+            <p>◉ Aumento de velocidad de aplicaciones (2 a 5 veces más rápido).<br>
+              ◉ Introducción de un nuevo compilador JIT.<br>
+              ◉ Soporte para Adobe Flash 10.1 y motor Javascript V8.<br>
+              ◉ Permite instalación en almacenamiento externo (ej. tarjeta SD).<br>
+              ◉ Actualizaciones automáticas de aplicaciones y servicio de copia de seguridad.<br>
+              ◉ Tethering (acceso a Internet para otros dispositivos) via USB y Wi-Fi.<br>
+              ◉ Soporte a Wi-Fi IEEE 802.11n y nuevas notificaciones.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/gingerbread-removebg-preview.png" class="node-image" style="width: 20rem;">
+          <div class="card">
+            <h3>GingerBread Android 2.3 API 9</h3>
+            <div class="meta">Diciembre 2010</div>
+            <p>◉ Soporte para mayores tamaños de pantalla y resoluciones.<br>
+            ◉ Rediseño de la interfaz de usuario y mejor gestión de “cortar, copiar y pegar”.<br>
+            ◉ Soporte para múltiples cámaras y reconocimiento facial.<br>
+            ◉ Nuevo recolector de basura en la máquina virtual de Dalvik.<br>
+            ◉ Mejor apoyo para desarrollo de código nativo (NDK).<br>
+            ◉ Soporte para VoIP/SIP, WebM/VP8, y tecnología NFC.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/honeycomb-removebg-preview.png" class="node-image" style=" padding-left: 5rem;">
+          <div class="card">
+            <h3>HoneyComb Android 3.0 API 11</h3>
+            <div class="meta">Febrero 2011</div>
+            <p>◉ Versión optimizada para tabletas con pantallas grandes.<br>
+            ◉ Nueva interfaz de usuario con un rediseño total de interacción.<br>
+            ◉ Introducción de fragments para crear diferentes elementos de UI.<br>
+            ◉ Barra de acciones visible para aplicaciones.<br>
+            ◉ Sustitución de teclas físicas por teclas en pantalla.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/icecream_sandwich-removebg-preview.png" class="node-image" style="width: 35rem;">
+          <div class="card">
+            <h3>Icecream Samdwich Android 4.0 API 14</h3>
+            <div class="meta">Octubre 2011</div>
+            <p>◉ Unificación: Fusión de versiones 2.x y 3.x para crear un sistema operativo versatil.<br>
+            ◉ Interfaz Renovada: Nueva interfaz de usuario con botones en pantalla.<br>
+            ◉ Reconocimiento Facial: API que permite desbloquear el teléfono mediante reconocimiento facial.<br>
+            ◉ Gestor de Datos: Herramienta para monitorear y limitar el consumo de datos.<br>
+            ◉ Edición de Imágenes: Funciones para manipular imágenes en tiempo real.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/jellybean-removebg-preview.png" class="node-image" >
+          <div class="card">
+            <h3>Jelly Bean Android 4.1 API 16</h3>
+            <div class="meta">Julio 2012</div>
+            <p>◉ Fluidez del Interfaz: Introducción de técnicas para mejorar la fluidez, como sincronismo vertical.<br>
+            ◉ Notificaciones Mejoradas: Sistema de notificaciones expandibles y personalizadas.<br>
+            ◉ Dictado por Voz Offline: Habilitación del dictado sin necesidad de conexión a Internet.<br>
+            ◉ Mejoras en Google Search: Búsquedas más eficaces con integración de Google Now.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/kitkat-removebg-preview.png" class="node-image" style="width: 30rem;">
+          <div class="card">
+            <h3>KitKat Android 4.4 API 19</h3>
+            <div class="meta">Octubre 2013</div>
+            <p>◉ Compatibilidad: Optimización para dispositivos con menor RAM, haciendo Android accesible a una gama más amplia.<br>
+            ◉ Interfaz de Usuario: Introducción del modo de inmersión a pantalla completa.<br>
+            ◉ WebViews: Basado en Chrome, mejora la visualización de contenido HTML5.<br>
+            ◉ Conectividad: Mejoras en NFC y soporte para nuevos protocolos Bluetooth.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/lollipop-removebg-preview.png" class="node-image" style="width: 27rem; padding-left: 6rem;">
+          <div class="card">
+            <h3>Lollipop Android 5.0 API 21</h3>
+            <div class="meta">Noviembre 2014</div>
+            <p>◉ Incorporación de un sensor contador de pasos.<br>
+            ◉ RenderThread para mantener la fluidez de las animaciones.<br>
+            ◉ Notificaciones en la pantalla de bloqueo y alertas importantes en ventanas flotantes.<br>
+            ◉ Introducción de Android TV con una interfaz simplificada.<br>
+            ◉ Audio avanzado y soporte para gráficos de alto rendimiento con OpenGL ES 3.1.<br>
+            ◉ Project Volta para optimizar el uso de la batería.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/marshmallow-removebg-preview.png" class="node-image" style="width: 35rem;">
+          <div class="card">
+            <h3>Marshmallow Android 6.0 API 23</h3>
+            <div class="meta">Septiembre 2015</div>
+            <p>◉ Soporte nativo para lectores de huellas digitales.<br>
+            ◉ Implementación del modo de ahorro "Doze" y función de App Standby<br>
+            ◉ Copias de seguridad automáticas en Google Drive.<br>◉ Soporte para USB-C y Android Pay para pagos móviles.<br>
+            ◉ Introducción de permisos en tiempo de ejecución.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/nougat-removebg-preview.png" class="node-image" >
+          <div class="card">
+            <h3>Nougat Android 7.0 - 7.1 API 24-25</h3>
+            <div class="meta">Agosto 2016</div>
+            <p>◉ Modo multitarea con pantalla dividida.<br>
+              ◉ Respuesta rápida desde notificaciones.<br>
+              ◉ Mejor optimización de batería con Doze mejorado.<br>
+              ◉ Soporte para realidad virtual (Daydream).<br>
+              ◉ Actualizaciones del sistema en segundo plano.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/oreo-removebg-preview.png" class="node-image" style="width: 25rem;">
+          <div class="card">
+            <h3>Oreo Android 8.0 - 8.1 API 26-27</h3>
+            <div class="meta">Agosto 2017</div>
+            <p>◉ Modo Picture-in-Picture (ventanas flotantes).<br>
+              ◉ Canales de notificaciones personalizables.<br>
+              ◉ Mejor rendimiento y arranque más rápido.<br>
+              ◉ Soporte para autofill en formularios.<br>
+              ◉ Mayor control en procesos en segundo plano.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/pie-removebg-preview.png" class="node-image" >
+          <div class="card">
+            <h3>Pie Android 9 API 28</h3>
+            <div class="meta">Agosto 2018</div>
+            <p>◉ Navegación por gestos.<br>
+              ◉ Batería adaptativa con inteligencia artificial.<br>
+              ◉ Brillo automático inteligente.<br>
+              ◉ Dashboard de bienestar digital.<br>
+              ◉ Mejoras en privacidad y seguridad.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/quince_pie-removebg-preview.png" class="node-image" style="width: 20rem;">
+          <div class="card">
+            <h3>Quince Tart Android 10 API 29</h3>
+            <div class="meta">Septiembre 2019</div>
+            <p>◉ Modo oscuro nativo del sistema.<br>
+              ◉ Navegación completamente por gestos.<br>
+              ◉ Mejor control de permisos de ubicación.<br>
+              ◉ Soporte para dispositivos plegables.<br>
+              ◉ Google dejó de usar nombres de postres públicamente desde esta versión para mejorar la claridad global y la accesibilidad, se les sigue identificando así porque mantienen el nombre de postre de forma interna para el desarrollo.<br>
+              ◉ Subtítulos automáticos con Live Caption.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/11-removebg-preview.png" class="node-image" style=" padding-left: 6rem;">
+          <div class="card">
+            <h3>Android 11 API 30</h3>
+            <div class="meta">Septiembre 2020</div>
+            <p>◉ Conversaciones organizadas en notificaciones.<br>
+              ◉ Burbujas de chat flotantes.<br>
+              ◉ Grabador de pantalla integrado.<br>
+              ◉ Permisos temporales para apps.<br>
+              ◉ Mejor control de dispositivos inteligentes.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/12-removebg-preview.png" class="node-image" style="width: 25rem;">
+          <div class="card">
+            <h3>Android 12 API 31</h3>
+            <div class="meta">Octubre 2021</div>
+            <p>◉ Nuevo diseño Material You personalizable.<br>
+              ◉ Indicadores de uso de cámara y micrófono.<br>
+              ◉ Panel de privacidad mejorado.<br>
+              ◉ Animaciones más fluidas.<br>
+              ◉ Widgets rediseñados.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/13-removebg-preview.png" class="node-image">
+          <div class="card">
+            <h3>Android 13 API 33</h3>
+            <div class="meta">Agosto 2022</div>
+            <p>◉ Permisos específicos para notificaciones.<br>
+              ◉ Soporte para idiomas por aplicación.<br>
+              ◉ Mejor reproducción multimedia.<br>
+              ◉ Mayor personalización del sistema.<br>
+              ◉ Optimización de rendimiento.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/14-removebg-preview.png" class="node-image" style="width: 25rem;">
+          <div class="card">
+            <h3>Android 14 API 34</h3>
+            <div class="meta">Octubre 2023</div>
+            <p>◉ Mejoras en accesibilidad y tamaño de fuentes.<br>
+              ◉ Mayor seguridad en instalación de apps.<br>
+              ◉ Optimización en consumo energético.<br>
+              ◉ Mejor compatibilidad con pantallas grandes.<br>
+              ◉ Personalización ampliada.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/15-removebg-preview.png" class="node-image" style="width: 30rem; padding-left: 4rem;">
+          <div class="card">
+            <h3>Android 15 API 35</h3>
+            <div class="meta">Octubre 2024</div>
+            <p>◉ Mejoras en privacidad y control de datos.<br>
+              ◉ Optimización de rendimiento del sistema.<br>
+              ◉ Mejor soporte para multitarea avanzada.<br>
+              ◉ Actualizaciones de seguridad reforzadas.<br>
+              ◉ Integración mejorada con inteligencia artificial.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="node">
+            <svg fill="none" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 13V7a1 1 00 1 1-1h6l-4 7h-4v2a1 1 0 0 1-1 1H7l-3-7z"/>
+            </svg>
+          </div>
+          <img src="img_android/16-removebg-preview.png" class="node-image" style="width: 25rem;">
+          <div class="card">
+            <h3>Android 16 API 36</h3>
+            <div class="meta">Junio 2025</div>
+            <p>◉ Selector de fotos más integrado.<br>
+              ◉ Notificaciones en vivo para rastrear información en tiempo real.<br>
+              ◉ Un modo de protección avanzada contra malware.<br>
+              ◉ Mejor gestión de la batería.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+
+  <div>
+    <button id="footer" onclick="window.location.href='index.html'">Volvamos al inicio</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="design.css">
+        <title>Index</title> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    
+    </head> 
+    <body>
+        <h1 id="titulo" style="font-family: Google Sans, sans-serif; text-align: center; padding-top: 4rem; font-size:3rem; ">What are we doing today?</h1>
+        <div class="box green"></div>
+        <div id="contenedor">
+            <div class="container">
+
+                <div class="item android">
+                    <img src="img/bot_android-removebg-preview.png">
+                    <a href="android.html" style="text-decoration: none;"><h3>Android</h3></a>
+                </div>
+            </div>
+            <img src="img/telefono-removebg-preview.png">
+            <div class="container">
+                <div class="item ios">
+                    <img src="img/apple_ios-removebg-preview-removebg-preview.png">
+                    <a href="ios.html" style="text-decoration: none;"><h3>iOS</h3></a>
+                </div>
+
+            </div>
+        </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+<script>
+
+document.querySelectorAll(".item").forEach(item => {
+
+    const img = item.querySelector("img");
+
+    item.addEventListener("mouseenter", () => {
+        gsap.to(img,{
+            y:-30,
+            duration:0.4,
+            ease:"power2.out"
+        });
+    });
+
+    item.addEventListener("mouseleave", () => {
+        gsap.to(img,{
+            y:80,
+            duration:0.4,
+            ease:"power2.in"
+        });
+    });
+
+});
+
+gsap.from('#titulo', {
+        y: -100,
+        opacity: 0,
+        duration: 1.5,
+        scale:2,
+        ease: "power2.out"
+    });
+gsap.to(".box", { 
+    rotation: 360,
+  x: '100vw',
+  xPercent: -100,
+  // special properties
+  duration: 2, // how long the animation lasts
+  repeat: 3, // the number of repeats - this will play 3 times
+  yoyo: true, // this will alternate back and forth on each repeat. Like a yoyo
+});
+
+</script>
+</body>
+</html>

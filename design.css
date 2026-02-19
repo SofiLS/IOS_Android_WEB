@@ -1,0 +1,68 @@
+body{
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    color:rgb(255, 255, 255);
+    font-family:Arial;
+}
+
+#contenedor{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:90vh;
+}
+
+.container{
+    display:flex;
+    gap:100px;
+    margin-top:100px;
+}
+
+.item{
+    position:relative;
+    cursor:pointer;
+    text-align:center;
+    height:5.5rem;
+    overflow:hidden;
+}
+
+.item h3{
+    position:relative;
+    z-index:2;
+    font-size:30px;
+    font-family:'Google Sans', sans-serif;
+}
+
+.item img{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%) translateY(80px);
+    width:7rem;
+    z-index:1;
+    pointer-events:none;
+}
+
+.item:hover h3{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.box {
+  display: block;
+  background-color: rgb(255, 255, 255);
+  width: 100px;
+  height:100px;
+  border-radius: 4rem;
+}
+h1 {
+  /* se define el gradiente como fondo del elemento */
+  background-image: linear-gradient(to right, #494949, rgb(0, 0, 0)00, #ffffff);
+
+  /* se recorta el fondo a la forma del texto */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Establece el color del texto como transparente para que el fondo recortado sea visible */
+  color: transparent;
+  font-weight: bold;
+}

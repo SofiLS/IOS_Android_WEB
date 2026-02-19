@@ -1,0 +1,187 @@
+body {
+  background: black;
+  font-family: sans-serif;
+}
+.menu:hover
+{
+    transform: scale(1.5);/*hace una escala*/
+    transition: all 0.5s;/*transition es para regular el movimiento o animacion de los elementos*/
+}
+/*nav ul es para la barra de navegacion  especificamente ul*/
+nav ul {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    list-style: none;/* property is used to control the appearance of list item markers (such as bullets or numbers) in HTML lists (<ul> or <ol>).*/
+    padding: 0;
+    margin: 0;
+}
+
+/*nav ul li es para los elementos de la barra de navegacion especificamente li*/
+nav ul li {
+    margin: 0 30px;
+}
+
+/*agregar fuente a elementos de li*/
+li{
+    font-family: "Google Sans", sans-serif;
+    font-weight: 500;
+    color: azure;
+    font-style: normal;
+    font-size: 30px;
+}
+nav ul li a {
+    color: white;/*color del texto*/
+    text-decoration: none;/*quitar el subrayado de los enlaces*/
+    font-size: 22px;
+    padding: 8px 16px;
+    border-radius: 40rem;
+    transition: background 0.3s;/*transition es para regular el movimiento o animacion de los elementos*/
+}
+
+/*nav ul li a:hover es para los enlaces de la barra de navegacion especificamente a cuando se pasa el mouse por encima*/
+/*hover es para cuando se pasa el mouse por encima*/
+nav ul li:hover {
+    background: #078ddb;/*color de fondo cuando se pasa el mouse por encima*/
+    opacity: 0.8;/*opacidad del fondo cuando se pasa el mouse por encima*/
+    border-radius: 3rem;
+}
+/* Main Timeline */
+#timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+#resumen{
+  display: flex;
+  align-items: center;
+  padding: 2rem 8rem 2rem 8rem;
+  border-width: 10px;
+  border-color: rgb(140, 189, 85);
+  border-radius: 2rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background: radial-gradient(circle at top left, #ffffff, #707070);
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+/* Individual entry containers */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%; /* Each takes half of the screen */
+  box-sizing: border-box;
+}
+
+/* Circles on the timeline line */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px; /* Positioned for the "left" side by default */
+  background-color: white;
+  border: 4px solid #939497;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0px 4px 8px 4px rgba(255, 255, 255, 0.2);
+}
+
+/* Logic for Left/Right alignment */
+.left { left: 0; }
+.right { left: 50%; }
+
+/* Move circles to the other side for right-hand items */
+.right::after {
+  left: -16px;
+}
+
+/* Text Box Styles */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 20px; /* Reduced from 7rem for better look, but adjustable */
+  box-shadow: 0px 4px 8px 4px rgba(255, 255, 255, 0.2);
+}
+
+.date {
+  background: #939497;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+h3{
+  font-size: 1.5rem;
+  padding-left: 12rem;
+}
+.version{
+  display:flex;
+}
+
+/* Contenedor principal para posicionamiento relativo */
+.container {
+  position: relative;
+  width: 50%; /* O el ancho que estés usando en tu timeline */
+  padding: 10px 40px;
+}
+
+/* Estilo base de la imagen (oculta por defecto) */
+.node-image {
+  position: absolute;
+  top: 50%;
+  width: 15rem; /* Ajusta este tamaño según prefieras */
+  height: auto;
+  opacity: 0;
+  z-index: 0;
+  pointer-events: none;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto elástico */
+}
+
+/* --- Lógica de posicionamiento --- */
+
+/* Si el texto está a la IZQUIERDA, la imagen aparece a la DERECHA */
+.container.left .node-image {
+  left: 110%; /* Empuja la imagen fuera del contenedor hacia la derecha */
+  transform: translateY(-50%) scale(0.8);
+}
+
+/* Si el texto está a la DERECHA, la imagen aparece a la IZQUIERDA */
+.container.right .node-image {
+  right: 110%; /* Empuja la imagen fuera del contenedor hacia la izquierda */
+  transform: translateY(-50%) scale(0.8);
+}
+
+/* --- Efecto Hover --- */
+.container:hover .node-image {
+  opacity: 0.8;
+  transform: translateY(-50%) scale(1); /* Crece a su tamaño original */
+}
+button#footer {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  padding: 10px 50px;
+  font-size: 2rem;
+  background: radial-gradient(circle at top left,#797979,#ffffff );
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Google Sans', sans-serif;
+}
